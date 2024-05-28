@@ -1,0 +1,666 @@
+body{
+  margin:0;
+  background: linear-gradient(to bottom, #0B045A 0%, #000000 100%);
+  box-sizing: border-box;
+  width: 100%;
+  
+}
+/*Styling Header*/
+.header{
+  display: flex;
+  flex-direction: row;
+  padding: 1vw 6vw 1vw 3vw;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+}
+/*phone version*/
+@media screen and (max-width: 480px) {
+  .header{
+    flex-direction: column;
+  }
+}
+
+.header-style a{
+  margin-left: 1.3vw;
+  margin-right: 1.3vw;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2vw;
+}
+/*phone version*/
+@media screen and (max-width: 480px) {
+  .header-style a{
+    font-size: 2vw;
+  }
+}
+
+.header-style a:hover{
+  color: blue;
+}
+
+/*Styling Footer*/
+footer{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  margin-top:5vw;
+  font-size: 1VW;
+}
+/*phone version*/
+@media screen and (max-width: 480px) {
+  footer{
+    font-size: 2.5vw;
+  }
+}
+hr{
+  width: 80%;
+}
+
+/*Styling BMW Logo*/
+.logo img{
+  width: 7vw;
+}
+
+/*Adjusting the video*/
+video {
+  width: 100%;
+  height: 50vw;
+  object-fit: cover;
+}
+
+
+/*Styling section 2*/
+.section2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  height: 35vw;
+}
+/*phone version*/
+@media screen and (max-width: 480px) {
+  .section2{
+    height: 150vw;
+  }
+}
+.section2_content{
+  position: relative;
+  height:14vw;
+  width: 22vw;
+  text-align: center;
+}
+/*phone version*/
+@media screen and (max-width: 480px) {
+  .section2_content{
+
+    height:90vw;
+    width: 50vw;
+    margin-top:3vw;
+  }
+}
+
+.section2_content img{
+  height:14vw;
+  width: 22vw;
+  display: block;
+  transition: transform 0.5s;
+  border-radius: 2%;
+}
+/*phone version*/
+@media screen and (max-width: 480px) {
+  
+.section2_content img{
+  height:30vw;
+  width: 100%;
+  display: block;
+  transition: transform 0.5s;
+  border-radius: 2%;
+}
+}
+
+.section2_divs{
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  height: 18vw;
+  justify-content:space-evenly;
+  align-items: center;
+}
+@media screen and (max-width: 480px) {
+  .section2_divs{
+    flex-direction: column;
+    height:60vw;
+    margin-top: 6vw;
+  }
+}
+
+/*Styling a in section 2*/
+.section2_content a {
+  padding: 0.527vw;
+  width: 16.458vw;
+  height: 3.292vw;
+  margin: 2%;
+  margin-top: 0.658vw;
+  font-size: 1vw;
+  background-color: rgba(50, 44, 135, 0.6);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+}
+/*phone version*/
+@media screen and (max-width: 480px) {
+  .section2_content > div > h2{
+    font-size: 3vw ;
+  }
+  .section2_content a {
+    width: 30.458vw;
+    height: 5.292vw;
+    margin-top: 2vw;
+    font-size: 2vw;
+
+  }
+}
+.section2_content a:hover, a:focus {
+  color: white;
+  outline: 0;
+}
+
+.effect {
+  color: #ffffff;
+  box-shadow: 0 0 40px 40px color inset, 0 0 0 0 grey;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+.effect:hover {
+  box-shadow: 0 0 10px 0 grey inset, 0 0 10px 4px grey;
+}
+
+
+.section2_content div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  background-color: transparent;
+}
+.section2_content h2{
+  margin-bottom: 0.658vw;
+  font-size: 2vw;
+  color: white;
+}
+
+.section2_content:hover img {
+transform: scale(1.1);
+border: 2px solid #c4c4c4;
+filter: brightness(20%);
+}
+
+.section2_content:hover div {
+opacity: 1;
+transition: ease-in 0.3s;
+}
+
+/*Styling Section 3*/
+.section_3 {
+background: url(images/motorsport.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+padding-bottom: 25vw;
+padding-top: 5vw;
+padding-left: 5vw;
+text-align: left;
+color: white;
+font-size: 2vw;
+}
+
+/*Styling Section 4*/
+.section_4_1{
+  text-align: center;
+  color: white;
+  font-size: 2vw;
+}
+.section_4_2{
+  background-color: white;
+  padding: 3vw 15vw;
+  font-size: 1.15vw;
+}
+
+/*Styling Section 5*/
+.section_5_1{
+padding-top: 2vw;
+padding-left: 5vw;
+text-align: left;
+color: white;
+font-size: 2vw;
+}
+
+
+/*Styling Section 6*/
+.section6{
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 5vw;
+}
+@media screen and (max-width: 480px) {
+  .section6{
+    height: 250vw;
+  }
+}
+
+.section6_content{
+  position: relative;
+  height:20vw;
+  width: 15vw;
+  text-align: center;
+
+}
+@media screen and (max-width: 480px) {
+  .section6_content{
+    height:50vw;
+    width: 35vw;
+    margin-top: 5vw;
+
+  }
+}
+.section6_content img{
+  height:20vw;
+  width: 15vw;
+  transition: transform 0.5s;
+  border-radius: 2%;
+}
+@media screen and (max-width: 480px) {
+  .section6_content img{
+    height:50vw;
+    width: 35vw;
+  }
+}
+
+.section6_divs{
+  display: flex;
+  flex-direction: row;
+  height:20vw;
+  width: 100vw;
+  justify-content: space-evenly;
+}
+@media screen and (max-width: 480px) {
+  .section6_divs{
+    flex-direction: column;
+    height: 250vw;
+    justify-content: center;
+    align-items: center;
+
+  }
+}
+/*Styling a in Section 6*/
+.section6_content a {
+  padding: 0.527vw;
+  width: 15vw;
+  height: 2.4vw;
+  margin: 2%;
+  margin-top: 2vw;
+  font-size: 1vw;
+  background-color: rgba(50, 44, 135, 0.6);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+  text-decoration: none;
+}
+
+/*phone version*/
+@media screen and (max-width: 480px) {
+  .section6_content > div > h2{
+    font-size: 1.5vw ;
+  }
+  
+  .section6_content a {
+    width: 30.458vw;
+    height: 5.292vw;
+    margin-top: 2vw;
+    font-size: 1.2vw;
+  }
+}
+
+.section6_content a:hover, a:focus {
+  color: white;
+  outline: 0;
+}
+
+
+
+.section6_content div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  background-color: transparent;
+  align-items: center;
+  justify-content: center;
+}
+.section6_content h2{
+  margin-bottom: 2vw;
+  font-size: 0.8vw;
+  color: white;
+}
+
+.section6_content:hover img {
+transform: scale(1.1);
+border: 2px solid #c4c4c4;
+filter: brightness(20%);
+}
+
+.section6_content:hover div {
+opacity: 1;
+transition: ease-in 0.3s;
+}
+
+/*Styling Section 7*/
+.section7 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+/*phone version*/
+@media screen and (max-width: 480px) {
+  .section7{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.section7 img{
+  width: 100%;
+}
+.section7_image{
+  width:60%;
+}
+
+/*Styling The Text in Lego section*/
+.lego_text {
+  width: 38%;
+  color: #ffffff;
+  padding-left:10vw;
+  padding-top:2vw;
+}
+.lego_text h1{
+  font-size: 2vw;
+}
+
+.lego_text p{
+  font-size: 1.2vw;
+}
+/*phone version*/
+@media screen and (max-width: 480px) {
+  .lego_text {
+    width: 100%;
+    color: #ffffff;
+    padding-left:0;
+    padding-top:2vw;
+    justify-content: center;
+    align-items: center;
+  }
+  .lego_text h1{
+    width: 80%;
+    margin: 0 10vw 5vw 10vw;
+    font-size: 4vw;
+    justify-content: center;
+  }
+  .lego_text p{
+    font-size: 2vw;
+    width: 80%;
+    margin: 0 10vw
+  }
+}
+
+
+/*series page css*/
+/*Styling BMW logo for series page*/
+.bs_logo img{
+width: 7vw;
+}
+
+/*Styling Picture for series page*/
+.bs_pic{
+width: 100%;
+height: 40vw;
+}
+
+/*Styling the BMW i and m series logos*/
+.BMW_Series_Logos{
+width: 100%;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-evenly;
+padding-top: 3vw;
+}
+
+/*phone version*/
+@media screen and (max-width: 480px) {
+  .BMW_Series_Logos{
+    flex-direction: column;
+  }
+}
+
+.BMW_Series_Logos > div{
+width: 25%;
+}
+
+.BMW_Series_Logos img{
+width: 100%;
+}
+
+/*Styling Text for selected divs*/
+.bs_normal_bg{
+  color: white;
+  padding-left: 5%;
+  font-size: 2vw;
+}
+/*Styling Text and Background for selected divs*/
+.bs_white_bg{
+  background-color: white;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-size: 1.15vw;
+}
+
+/*Styling Text that is displayed after Series logo is clicked on*/
+.text {
+  display: none;
+  width: 100%;
+}
+
+.show {
+  display: block;
+}
+
+/*Styling the Gallery of i series*/
+.ix {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 5vw;
+}
+
+
+
+.ix h1{
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 5vw;
+  font-size: 3vw;
+}
+
+.ix_i{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+/*phone version*/
+@media screen and (max-width: 480px) {
+  .ix_i{
+    flex-direction: column;
+  }
+}
+
+.ix_i > div{
+  height: 100%;
+
+}
+.ix_i_divs{
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+}
+.ix_i_divs > div{
+  width: 50%;
+}
+.ix_i_divs img{
+  width: 100%;
+}
+
+/*Styling the Gallery of m series*/
+.mx {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 5vw;
+}
+
+.mx h1{
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 5vw;
+  font-size: 3vw;
+}
+
+.mx_i{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+/*phone version*/
+@media screen and (max-width: 480px) {
+  .mx_i{
+    flex-direction: column;
+  }
+}
+
+.mx_i > div{
+  height: 100%;
+
+}
+.mx_i_divs{
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+}
+.mx_i_divs > div{
+  width: 50%;
+}
+.mx_i_divs img{
+  width: 100%;
+}
+
+/*BMW X Mercedes*/
+/*Styling BMW logo for BMWXMERCEDES page*/
+.bxm_logo img{
+  width: 7vw;
+}
+
+/*Styling Picture for BMWXMERCEDES page*/
+.bxm_pic{
+  width: 100%;
+  height: 40vw;
+}
+
+/*Styling Text for selected divs*/
+.bxm_normal_bg{
+  color: white;
+  padding-left: 5%;
+  font-size: 2vw;
+}
+
+/*Styling Text and Background for selected divs*/
+.bxm_white_bg{
+  background-color: white;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-size: 1.15vw;
+}
+
+/*BMW X Toyota*/
+/*Styling BMW logo for BMWXTOYOTA page*/
+.bxt_logo img{
+  width: 7vw;
+}
+/*Styling Picture for BMWXTOYOTA page*/
+.bxt_pic{
+  width: 100%;
+  height: 40vw;
+}
+
+/*Styling Text for selected divs*/
+.bxt_normal_bg{
+  color: white;
+  padding-left: 5%;
+  font-size: 2vw;
+}
+
+/*Styling Text and Background for selected divs*/
+.bxt_white_bg{
+  background-color: white;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-size: 1.15vw;
+}
+
+
+/*BMW Mean*/
+/*Styling BMW logo for iNFO page*/
+.bm_logo img{
+  width: 7vw;
+}
+
+/*Styling Picture for INFO page*/
+.bm_pic{
+  width: 100%;
+  height: 40vw;
+}
+
+/*Styling Text for selected divs*/
+.bm_normal_bg{
+  color: white;
+  padding-left: 5%;
+  font-size: 2vw;
+}
+
+/*Styling Text and Background for selected divs*/
+.bm_white_bg{
+  background-color: white;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-size: 1.15vw;
+}
